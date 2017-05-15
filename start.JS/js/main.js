@@ -29,3 +29,14 @@ var myObj = JSON.parse(theData2);
 console.log(myObj);
 
 document.getElementById('message').innerHTML = myObj.Jane.degree.BA;*/
+
+//AJAX Ejemplo 1
+var xhr = new XMLHttpRequest();
+
+xhr.open('GET','data.json', true);
+
+xhr.send();
+
+xhr.onreadystatechange = function() {
+    console.log(xhr.readyState);
+}
